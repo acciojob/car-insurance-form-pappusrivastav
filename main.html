@@ -4,38 +4,48 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
-	<title>Car Insurance Registration</title>
+	<title>Car Insurance Registration Form</title>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-	<form method="POST"
-		action="process_registration.php">
-		<label for="name">NAME:</label>
-		<input type="Text"id="name"required><br><br>
-		<label for="Email">Email:</label>
-		<input type="Text"id="Email"required="yes"><br><br>
-	<label>Gender:</label>
-	<input type = "Radio"id="male"name="gender"Value="male"required>
-	<label for="male">male</label>	
-	<input type = "Radio"id="female"name="gender"Value="female"required>
-		<label for="female">female</label><br><br>
-		<label for="cars">Car Brand</label>
-		<select id="cars"name="cars">
+	<form method="post" action="process_registration.php">
+		<label for="name">Name:</label>
+		<input type="text" id="name" required="Yes"><br><br>
+
+		
+		<label for="email">Email:</label>
+		<input type="Email" id="email" required="Yes"><br><br>
+
+		
+		<label>Gender:</label><br>
+		<input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br><br>
+
+		
+		<label id="cars">Car Brands</label>
+		<select id="cars" name="cars">
 			<option value="BMW">BMW</option>
 			<option value="Audi">Audi</option>
 			<option value="Mercedez">Mercedez</option>
 		</select><br><br>
+
+		
 		<label for="carage">Car Age</label>
-		<input type="Number"id="carage"required><br><br>
-		<label for="dop">Date of Purchase</labelfor>
-		<input type="Date"id="dop"required><br><br>
+		<input type="number" id="carage" required="Yes"><br><br>
+		
+		<label for="dop">Date of Purchase</label>
+		<input type="date" id="dop" required="Yes"><br><br>
+		
 		<label for="password">Password</label>
-		<input type="Password"id="password"required><br><br>
-	<Button type="submit">Submit</Button> 
-<!-- 		<label>Submit Button</label>	 -->
-<!-- 		<input type="Submit">	 -->
+		<input type="password" id="password" required="Yes"><br><br>
+
+		
+		<label>Submit Button</label>
+		<input type="submit">
 	</form>
+	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
 
